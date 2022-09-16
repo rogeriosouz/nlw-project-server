@@ -68,7 +68,7 @@ class AdController {
         },
       });
 
-      return res.status(201).json({ data });
+      return res.status(201).json(data);
     } catch (error) {
       console.log(error);
       return res.status(500).json({ erorr: 'Error internal server' });
